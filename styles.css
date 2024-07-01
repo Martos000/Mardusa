@@ -1,0 +1,371 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;/*This could fit in "Body"*/
+}
+
+body {
+    background-color: #3e9fcc;
+    /*whitesmoke;;rgba(255, 255, 255, 0.75)*/
+}
+
+.header {
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/Mardusa_Facility.jpg);
+    /*url(../images/Logos_1.1.svg ),linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),*/
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 0% 6%;
+    justify-content:space-between;
+    /* justify-content: flex-start; */
+    align-items: center;
+    background-color: whitesmoke;
+    /* #fff */
+    /* margin-bottom: 10px; */
+
+}
+
+nav img {
+    width: 100px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 4px 24px;
+
+}
+
+.nav-links ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 24px;
+    justify-content: center;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #a98f54;
+    display: block;
+    margin: auto;
+    transition: 0.2s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+
+}
+nav .fa{
+    display: none;
+}
+
+/* This section will have a short description  */
+.-container {
+    background-color: whitesmoke;
+    /* margin-top:10px; */
+    /* display: grid; */
+    /* padding:20px; */
+    /* margin:1%; */
+    /* height:60vh; */
+    /* text-align: center; */
+
+}
+
+.about {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+    /* width: 90%; */
+    /* color:#fff;  */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform:translate(-50%,-50%); */
+}
+.about h2 {
+    font-size: 32px;
+
+}
+.about p{
+    text-justify:auto;
+    font-size:30px;
+    /* line-height: 20px; */
+    padding: 30px;
+}
+/*this secction glimse of the products //there will be an entire page of it*/ 
+.main {
+    align-content: center;
+    margin: auto;
+    text-align: center;
+    /* width: 90%; */
+    padding: 50px;
+}
+.main h2 {
+    font-size: 32px;
+
+}
+.main div{
+    padding: 20px;
+}
+
+/*  */
+.gallery{  
+    padding: 30px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns:repeat(4,1fr); 
+
+}
+.gallery img{
+    border-radius: 20px; 
+    width:100%;
+}
+#myimg img{
+    width:200px;
+}
+/*  */
+.contact{
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+
+}
+.contact h2{
+    font-size: 32px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}  
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+} 
+
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom:18px;
+    outline:none;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+
+/* .contact-col div{
+    display:flex;
+    align-items:center;
+    margin-bottom:40px;
+    
+} */
+
+.contact-col div .fa{
+    font-size: 28px;
+    margin: 10px;
+    margin-right:30px ;
+}
+
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color:#555;
+    font-weight: 400;
+}
+
+.location{
+    width:85%;
+    margin:auto;
+    padding: 20px 0;
+}
+
+.location iframe{
+    width: 100%;
+}
+
+
+@media(max-width:800px){
+    
+    .header {
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+
+    nav {
+        background:none ;
+        
+    }
+    .nav-links{
+        position: fixed;
+        background:#3e9fcc;
+        height:100vh;
+        width:200px;
+        top:0;
+        right:-200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+        line-height: 40px;
+
+    }
+    
+    nav .fa{
+        display: block;
+        color:#fff;
+        margin:10px;
+        font: size 24px;
+        cursor:pointer;
+
+    } 
+    .gallery {
+        grid-template-columns:repeat(1,1fr); 
+    }
+
+    .gallery img{
+        border-radius: 20px; 
+        width:100%;;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .Footer{
+        flex-direction: column;
+        /* grid-template-columns: repeat(1, 1fr); */
+    }
+}
+/* .hero-container {
+    border-radius: 20px; 
+    border: solid 1px black;
+    grid-template-columns: repeat(2,1fr); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+        overflow: hidden;
+            flex-direction: column; 
+
+
+} */
+
+
+/* .hero img {
+    height: 300px;
+    border-radius: 10px;
+
+} */
+
+/* .home {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px ;
+} */
+
+
+/* .facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom:5%;
+    text-align: center;
+
+} */
+
+/* .course-col {
+    flex-basis: 31%;
+    background: whitesmoke;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.3s;
+} */
+
+
+/* Footer  image logo | Contact | Social media */
+.Footer {
+    background-color: rgb(90, 90, 90);
+    align-items: center;
+    padding: 10px; 
+    display: flex;
+    justify-content:space-around;
+
+    /* margin:1%; */
+    /* height: 30vh; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr);  */
+}
+
+.footerLogo {
+    display: flex;
+    justify-content: center;
+}
+
+
+.FooterContact{
+
+    margin: 1%;
+    align-items: center;
+
+
+}
+ 
+.FooterContact div{
+    display:flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 10px;
+   
+}
+
+.FooterContact .fa{
+
+    margin: 10px;
+    margin-right:20px ;
+} 
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
+.icons a{
+    font-size: 30px;
+    padding: 20px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+/*
+    align-items: center;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+.text-box{}
+ .firstSight 
+ .container{}
+  Experiment test SlideShow
