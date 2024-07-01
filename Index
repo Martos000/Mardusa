@@ -1,1 +1,240 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Put your description here.">
+    <!-- CSS/styles-->
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Marmoles Regionales de Durango</title>
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script type = "text/javascript" src = "scripts.js" ></script> -->
+
+</head>
+
+<body>
+    <!--Simple Web Page this section has nav bar and a image-->
+    <section class="header">
+        <nav>
+            <a href="#"><img src="../images/Logos_1.1.svg" alt="Mardusa Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#main">PRODUCTS</a></li><!-- GALLERY -->
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!--This section is About us -->
+    <section class="-container">
+
+        <div class="about" id="about">
+
+            <h2>About Us</h2>
+
+            <p>
+                Mármoles Regionales de Durango is a company specialized in the extraction, processing, and distribution
+                of marble and other natural stones.
+                With a legacy of over 40 years & excellence, our dedication to craftsmanship and attention to detail is
+                evident in every piece we create.
+                We pride ourselves on delivering stunning, durable natural stone products that elevate any space.
+            </p>
+
+            <!-- <a href="#" class="hero-btn">Visit us to Know More</a>-->
+        </div>
+
+    </section>
+
+    <!--This section will showcase our products and main info (get a quote )
+    on this stage the procedure is still manual later on adding the feature of an online store -->
+
+    <section class="-container">
+        <div class="main" id="main">
+
+            <h2>Products</h2>
+            <div class="gallery">
+                   <div class="">
+                    <img src="../images/Onix Amarillo.jpg" loading="lazy" alt="material_0">
+                    <h3>Yellow Onyx</h3>
+                </div>
+                <div class="">
+                    <img src="../images/Onix negro.jpg" loading="lazy" alt="material_0">
+                    <h3>Black Exotic Onyx</h3>
+
+                </div>
+                <div class="">
+                    <img src="../images/White Moro.jpeg" loading="lazy" alt="material_0">
+                    <h3>White Moro</h3>
+
+                </div> 
+
+                <div class="">
+                    <img src="../images/20240614110141_IMG_0161.JPG" loading="lazy" alt="material_0">
+                    <h3>White Exotic Onyx</h3>
+                </div>
+                <div class="">
+                    <img src="../images/Peach Slab.jpeg" loading="lazy" alt="material_0">
+                    <h3>Peach</h3>
+                </div>    
+                <div class="">
+                    <img src="../images/Ojinaga.jpg" loading="lazy" alt="material_0">
+                    <h3>Ojinaga</h3>
+
+                </div>
+                <div class="">
+                    <img src="../images/20240614105517_IMG_0157.JPG" loading="lazy" alt="material_0">
+                    <h3>White Elephant Onyx</h3>
+
+                </div>
+
+
+                <div class="">
+                    <img src="../images\Nombre Abajo N.png" loading="lazy" alt="material_0">
+                    <h3>And More To Come</h3>
+                </div>
+              
+                <!-- <div class="">
+                    <img src="../images/20240614110724_IMG_0166.JPG"loading="lazy" alt="material_0">
+                    <h3>Ojinaga</h3>
+    
+                </div> -->
+                <!-- <div class="">
+                    <img src="../images/20240614114559_IMG_0201.JPG"loading="lazy" alt="material_0">
+                    <h3>Ojinaga</h3>
+                </div> -->
+
+                <!-- <div class="gallery" id="myimg"></div> -->
+                <!-- <div class="row"></div> -->
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact alpha version  -->
+    <section class="-container">
+
+        <div class="contact" id="contact">
+            <h2>Contact Us</h2>
+
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <span>
+                            <h5>Calle Guanacevi 493 Parque Industrial Lagunero, 35078</h5>
+                            <p> Gómez Palacio,Durango México</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+52 871 719 1010</h5>
+                            <p> Monday to Saturday 9 a. m.-6 p. m</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <span>
+                            <h5>mardusainfo@gmail.com</h5>
+                            <p> Email us your query</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <form action="contact_form_handler.php" method="post">
+                        <!-- <label for="name">Name:</label> -->
+                        <input type="text" id="name" name="name" placeholder="Name:" required><br><br>
+
+                        <!-- <label for="phone">Phone:</label> -->
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"  placeholder="Phone Number:"required><br><br>
+
+                        <!-- <label for="email">Email:</label> -->
+                        <input type="email" id="email" name="email" placeholder="Email:" required><br><br>
+
+
+                        <!-- <label for="message">Message:</label><br> -->
+                        <textarea id="message" name="message" rows="4" cols="50" placeholder="Message:"
+                            required></textarea><br><br>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="location">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57589.930864774564!2d-103.52100379370002!3d25.559331634514376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868fd99b3b59f2f7%3A0xe3d3df34c46ca470!2sM%C3%A1rmoles%20Regionales%20de%20Durango!5e0!3m2!1ses-419!2smx!4v1710745547451!5m2!1ses-419!2smx"
+                    title="Where we are Located" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" >Where we are Located
+                </iframe>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="Footer">
+        <div class="footerLogo">
+            <a href="#"><img src="..\images\Nombre Abajo B.png" alt="Logo footer" width="200px"></a>
+        </div>
+        <div class="FooterContact">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <span>
+                    <h5>Calle Guanacevi 493 Parque Industrial Lagunero, 35078</h5>
+                    <p> Gómez Palacio,Durango México</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+52 871 719 1010</h5>
+                    <p> Monday to Saturday 9 a. m.-6 p. m</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <span>
+                    <h5>mardusainfo@gmail.com</h5>
+                    <p> Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=100069772011614"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/mardusamarmoles"><i class="fa fa-instagram"></i></a>
+            <!-- <a href="#"><i class="fa fa-whatsapp"></i></a> -->
+            <!-- <a href="#"><i class="fa fa-linkedin"></i></a> -->
+            <!-- <a href="#"><i class="fa fa-youtube"></i></a> -->
+            <!-- <a href="#"><i class="fa fa-pinterest y youtube"></i></a> -->
+        </div>
+
+    </section>
+    <!-- JS menu button first approach-->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0px";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>
